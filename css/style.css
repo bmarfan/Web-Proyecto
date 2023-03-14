@@ -847,10 +847,6 @@ a {
   .caballos__info {
     padding: 1px;
   }
-  .header__title {
-    font-size: 7.2px;
-    padding: 5em;
-  }
 }
 @media (max-width: 576px) {
   .navbar__menu {
