@@ -1,0 +1,49 @@
+@media (max-width: 576px){
+    .navbar__menu{
+        width: 100%;
+    }
+    //index main
+    .section__container--quickmenu{
+        .card{
+            font-size: 8px;
+        }
+    }
+    .title{
+        span{
+            display: none;
+        }
+    }
+    .caminatas__container--info{
+        .row{
+            flex-direction: column;
+            padding: 2rem;
+        }
+        .caminatas__informacion{
+            span{
+                text-align: justify;
+            }
+        }
+    }
+    .caminatas__texto{
+        padding: 1rem;
+    }
+    .caminatas__precios-wrap ul{
+        margin: 0;
+        padding: 0;
+    }
+    //h1 paginas
+    .header__title{
+        font-size: 6px;
+    }
+
+    //titulos
+    .title{
+        font-size: 6px;
+        text-align: center;
+    }
+
+    //footer
+    .footer__contacto{
+        padding-bottom: 0;
+    }
+}

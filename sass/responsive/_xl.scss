@@ -1,0 +1,45 @@
+@media (max-width: 1200px){
+    //main index
+    .section__container--intro{
+        .texto__intro--right{
+            padding-top: 0;
+            
+            p:first-child{
+                display: none;
+            }
+        }
+    }
+    .texto__intro--top{
+        display: block;
+        padding: 0 10rem 3rem;
+        p{
+            font-size: 1.4rem;
+        }
+    }
+    
+    //quickmenu
+    .card{
+        font-size: 8px;
+    }
+    .card__title{
+        padding: 20px;
+    }
+    .card__link{
+        top: 20px;
+        right: 20px;
+    }
+
+    //ed. ambiental imagenes modal
+    .ambiental__galeria{
+        flex-wrap: wrap;
+    }
+    .ambiental__imagen{
+        max-width: 50%;
+    }
+
+    //h1 paginas
+    .header__title{
+        font-size: 8px;
+        padding-bottom: 10em;
+    }
+}

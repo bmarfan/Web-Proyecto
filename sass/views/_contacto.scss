@@ -1,0 +1,52 @@
+.formulario{
+    position: relative;
+}
+.mapa{
+    @include flex(row, center, center);
+    padding: 30px;
+    height: 100%;
+}
+.formlulario__container{
+    position: relative;
+}
+.forulario__wrap{
+    @include flex(row, center, center);
+    flex-wrap: wrap;
+}
+.formulario__content{
+    width: 50%;
+    padding: 1rem .5rem 0;
+    position: relative;
+    
+    input, textarea{
+        width: 100%;
+        padding: .8rem;
+        border-radius: 5px;
+        border: rgba(var(--dark-rgb-back-2), .1) 1px solid;
+        font-size: 1.3em;
+        box-shadow: var(--box--shadow) rgba(var(--dark-rgb-back-2,), .05)!important;
+    }
+}
+.formulario__content--mensaje{
+    @extend .formulario__content;
+    width: 100%;
+    textarea{
+        height: 30vh;
+    }
+}
+.formulario__submit{
+    position: relative;
+    width: 100%;
+    padding: .5rem;
+    input{
+        width: 100%;
+        background: linear-gradient(to right, var(--accent-1) 0%, var(--accent-3) 50%, var(--accent-4) 100%);
+        border: none;
+        border-radius: 5px;
+        color: var(--bs-white);
+        text-transform: uppercase;
+        padding: 1rem;
+        box-shadow: var(--box--shadow) rgba(var(--dark-rgb-back-2,), .1)!important;
+        font-size: 1.2em;
+    }
+}

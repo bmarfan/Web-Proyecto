@@ -1,0 +1,112 @@
+//valores por defecto
+html{
+    font-size: 62.5%;
+    -webkit-text-size-adjust: 62.5%;
+    line-height: 1.2;
+}
+body, html{
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+    overflow-x: hidden;
+    overscroll-behavior: none;
+    font-family: $font-family;
+}
+*, :after, :before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+//links generico
+a{
+    text-decoration: none!important;
+}
+
+//scrollbar
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+}
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--accent-1);
+    border-radius: 25px;
+}
+::-webkit-scrollbar-track {
+    background: var(--back-claro1);
+    border: none;
+}
+::selection{
+    background: var(--accent-1);
+    color: var(--bs-dark);
+}
+
+//secciones
+.section{
+    background: var(--background-primary);
+}
+.section:nth-child(odd){
+    background: var(--background-secundary);
+}
+.section__container{
+    padding: 80px 20px;
+}
+
+//titulos
+.title{
+    h1, h2{
+        @include font-title(800, italic, 4em);
+    }
+    color: var(--accent-2);
+    text-transform: uppercase;
+    padding: 0 10px;
+    margin: 0 10px;
+    border-bottom: 1px solid;
+    letter-spacing: -1px;
+    text-align: right;
+}
+//textos
+.texto{
+    font-size: 1.3rem;
+    text-align: justify;
+    padding: 20px;
+
+    i{
+        color: var(--accent-4);
+        font-weight: 400;
+    }
+}
+
+//h1 de las paginas
+.header__title{
+    width: 100%;
+    height: 100%;
+    @include flex(row, end, end);
+    padding: 5em 7em 7em;
+    
+    h1{
+        color: var(--bs-white);
+        @include font-title(800, italic, 6em);
+        position: relative;
+        z-index: 2;
+        text-transform: uppercase;
+        text-shadow: var(--text--shadow) rgba(var(--dark-rgb-back-2),.4);
+    }
+}
+
+//imagenes
+.imagen{
+    position: relative;
+    img{
+        width: 100%;
+        border-radius: 10px;
+    }
+}

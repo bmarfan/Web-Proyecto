@@ -1,0 +1,58 @@
+@media (max-width: 998px){
+    //navbar
+    .navbar__link{
+        margin: 0 2px;
+    }
+    //main index
+    .section__container--quickmenu{
+        .card{
+            font-size: 10px;
+        }
+        .col:first-child{
+            width: 100%;
+        }
+    }
+    .texto__intro--top{
+        padding: 0 1rem 1rem;
+    }
+    .texto__intro--right{
+        padding: 2rem 0 0!important;
+        font-size: 1.4rem;
+    }
+    //caminatas
+    .section__container--caminatas{
+        .imagen {
+        display: none;
+        }
+    }
+    .caminatas__precios{
+        width: 31vw;
+    }
+    .caminatas__informacion{
+        @include flex(row, center, start);
+        span{
+            text-align: left;
+        }
+    }
+
+    //formularios
+    .formulario{
+        .mapa{
+            display: none;
+        }
+    }
+
+    //caballos
+    .caballos__box--bottom{
+        display: block;
+    }
+    .caballos__box--top{
+        display: none;
+    }
+
+        //h1 paginas
+        .header__title{
+            font-size: 8px;
+            text-align: center;
+        }
+}

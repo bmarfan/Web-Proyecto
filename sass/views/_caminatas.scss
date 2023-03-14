@@ -1,0 +1,59 @@
+//secciones
+.section__container--caminatas{
+    @extend .section__container;
+    padding: 100px 13%;
+
+    .imagen{
+        margin-top: 2rem;
+    }
+}
+//texto
+.caminatas__texto{
+    @extend .texto;
+    padding: 3rem 3rem 1rem;
+}
+
+//información asociada
+.caminatas__precios-wrap{
+    ul{
+        @include list;
+        @include flex(row, center, start);
+        flex-wrap: wrap;
+        padding: 0 2.5rem;
+    }
+    li{
+        color: var(--accent-3);
+        font-size: 1em;
+    }
+}
+.caminatas__informacion{
+    @include flex(column, center, center);
+
+    i{
+        font-size: 3rem;
+        color: var(--accent-2);
+        padding: 10px;
+    }
+    span{
+        text-transform: uppercase;
+        padding:  .5rem 2.5rem;
+        text-align: center;
+        font-size: .95rem;
+    }
+}
+
+//precios
+.caminatas__precios{
+    width: 20vw;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+    background: var(--background-primary);
+    margin: 0 6px 5px;
+    box-shadow: var(--box--shadow) rgba(var(--dark-rgb-back-2), .05);
+}
+.caminatas__precios--destacado{
+    background: linear-gradient(to right, var(--accent-1) 0%, var(--accent-3) 50%, var(--accent-6) 100%);
+    color: var(--bs-white);
+    @extend .caminatas__precios;
+}
