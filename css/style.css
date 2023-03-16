@@ -90,7 +90,7 @@ a {
   background: var(--background-secundary);
 }
 
-.section__container, .section__container--intro, .section__container--quickmenu, .section__container--caminatas, .section__container--caballos, .section__container--ambiental {
+.section__container, .section__container--intro, .section__container--quickmenu, .section__container--caminatas, .section__container--exp-caballos, .section__container--ambiental {
   padding: 80px 20px;
 }
 
@@ -414,38 +414,8 @@ a {
   flex-direction: row-reverse;
 }
 
-.section__container--caballos .texto, .section__container--caballos .texto__intro--right, .section__container--caballos .texto__intro--top, .section__container--caballos .caminatas__texto {
-  padding: 4rem;
-}
-.section__container--caballos .imagen {
-  padding: 5%;
-}
-
-.caballos__info {
-  padding: 1.5rem;
-  text-align: center;
-}
-.caballos__info i {
-  color: var(--accent-2);
-  display: block;
-  font-size: 3em;
-}
-.caballos__info b {
-  display: block;
-  text-transform: uppercase;
-  color: var(--accent-3);
-  padding: 1em 0 0;
-}
-.caballos__info span {
-  text-transform: uppercase;
-}
-
-.caballos__box--bottom {
-  display: none;
-}
-
-.caballos__box--top {
-  display: block;
+.section__container--exp-caballos {
+  padding: 5% 15%;
 }
 
 .section__container--caminatas {
