@@ -3,7 +3,7 @@
     @extend .section__container;
 }
 .section__container--quickmenu{
-    padding-bottom: 11rem;
+    padding-bottom: 11rem;    
 }
 
 //video
@@ -44,85 +44,84 @@
 .texto__intro--right{
     @extend .texto;
 }
-
-//cards del menú rápido
-.card{
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    margin: 1rem 0 0;
-    border-radius: 10px;
-    @include box-shadows(var(--box--shadow), rgba(var(--dark-rgb-back-1),.1));
-    border: none;
-    top: 2rem;
-}
-.card__imagen{
-    max-height: 230px;
-    overflow: hidden;
-    filter: brightness(.8);
-    position: relative;
-    transition: .5s ease-in-out;
-    transform: none;
-    img{
+    //cards del menú rápido
+    .card{
         width: 100%;
-    }
-    .card:hover &{
-        transform: scale(1.2);
-        filter: none;
-        transition: .5s ease-in-out;
-    }
-}
-.card__title{
-    @include sizes(100%, 100%);
-    position: absolute;
-    top: 0;
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    h3{
-        color: var(--bs-white);
-        @include font-title(800, normal, 3.35em);
-        @include text-shadows(var(--text--shadow), var(--dark-back-1));
-        text-transform: uppercase;
-    }
-}
-.card__link{
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    background: var(--accent-3);
-    overflow: hidden;
-    border-radius: 5px;
-    padding: 7px 10px;
-
-    &::before{
-        content: '';
-        position: absolute;
-        @include sizes(100%, 100%);
-        background: var(--background-primary);
-        left: 0;
-        top: 0;
-        transform: translateX(-101%);
-        transition: .5s ease-in-out;
-    }
-    &:hover::before{
-        transform: translateX(0);
-        transition: .5s ease-in-out;
-    }
-    
-    .card__link--estilo{
-        color: var(--bs-white);
-        text-transform: uppercase;
-        font-size: 1.1em;
         overflow: hidden;
         position: relative;
+        margin: 1rem 0 0;
+        border-radius: 10px;
+        @include box-shadows(var(--box--shadow), rgba(var(--dark-rgb-back-1),.1));
+        border: none;
+        top: 2rem;
+    }
+    .card__imagen{
+        max-height: 230px;
+        overflow: hidden;
+        filter: brightness(.8);
+        position: relative;
         transition: .5s ease-in-out;
-        padding: 7px 10px;
-
-        &:hover{
-            color: var(--accent-1);
+        transform: none;
+        img{
+            width: 100%;
+        }
+        .card:hover &{
+            transform: scale(1.2);
+            filter: none;
             transition: .5s ease-in-out;
         }
     }
-}
+    .card__title{
+        @include sizes(100%, 100%);
+        position: absolute;
+        top: 0;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        h3{
+            color: var(--bs-white);
+            @include font-title(800, normal, 3.35em);
+            @include text-shadows(var(--text--shadow), var(--dark-back-1));
+            text-transform: uppercase;
+        }
+    }
+    .card__link{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        background: var(--accent-3);
+        overflow: hidden;
+        border-radius: 5px;
+        padding: 7px 10px;
+    
+        &::before{
+            content: '';
+            position: absolute;
+            @include sizes(100%, 100%);
+            background: var(--background-primary);
+            left: 0;
+            top: 0;
+            transform: translateX(-101%);
+            transition: .5s ease-in-out;
+        }
+        &:hover::before{
+            transform: translateX(0);
+            transition: .5s ease-in-out;
+        }
+        
+        .card__link--estilo{
+            color: var(--bs-white);
+            text-transform: uppercase;
+            font-size: 1.1em;
+            overflow: hidden;
+            position: relative;
+            transition: .5s ease-in-out;
+            padding: 7px 10px;
+    
+            &:hover{
+                color: var(--accent-1);
+                transition: .5s ease-in-out;
+            }
+        }
+    }

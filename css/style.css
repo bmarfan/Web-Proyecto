@@ -90,7 +90,7 @@ a {
   background: var(--background-secundary);
 }
 
-.section__container, .section__container--intro, .section__container--quickmenu, .section__container--caminatas, .section__container--exp-caballos, .section__container--ambiental {
+.section__container, .section__container--intro, .section__container--quickmenu, .section__container--caminatas, .section__container--caballos, .section__container--galeria, .section__container--ambiental {
   padding: 80px 20px;
 }
 
@@ -357,7 +357,7 @@ a {
 }
 
 .ambiental__imagen {
-  max-width: 32%;
+  max-width: 49%;
 }
 
 .ambienta__galeria--bottom .ambiental__imagen {
@@ -396,7 +396,7 @@ a {
   background-color: transparent;
   text-align: right;
   position: relative;
-  top: 5rem;
+  top: 30px;
   left: -3rem;
   height: 0;
 }
@@ -413,9 +413,52 @@ a {
 .section__container--ambiental .row {
   flex-direction: row-reverse;
 }
+.section__container--ambiental .texto, .section__container--ambiental .texto__intro--right, .section__container--ambiental .texto__intro--top, .section__container--ambiental .caminatas__texto {
+  padding: auto 5%;
+}
+.section__container--ambiental .texto__icon {
+  position: relative;
+  top: 115px;
+}
 
-.section__container--exp-caballos {
-  padding: 5% 15%;
+.section__container--galeria .ambiental__imagen {
+  max-width: 99%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.section__container--caballos .texto, .section__container--caballos .texto__intro--right, .section__container--caballos .texto__intro--top, .section__container--caballos .caminatas__texto {
+  padding: 4rem;
+}
+.section__container--caballos .imagen {
+  padding: 5%;
+}
+
+.caballos__info {
+  padding: 1.5rem;
+  text-align: center;
+}
+.caballos__info i {
+  color: var(--accent-2);
+  display: block;
+  font-size: 3em;
+}
+.caballos__info b {
+  display: block;
+  text-transform: uppercase;
+  color: var(--accent-3);
+  padding: 1em 0 0;
+}
+.caballos__info span {
+  text-transform: uppercase;
+}
+
+.caballos__box--bottom {
+  display: none;
+}
+
+.caballos__box--top {
+  display: block;
 }
 
 .section__container--caminatas {
@@ -851,6 +894,15 @@ a {
   }
   .footer__contacto {
     padding-bottom: 0;
+  }
+  .section__container--ambiental .ambiental__galeria {
+    display: none;
+  }
+  .formulario__content, .formulario__content--mensaje {
+    width: 100%;
+  }
+  .caballos__info {
+    padding: 5%;
   }
 }
 

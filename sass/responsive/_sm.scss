@@ -46,4 +46,19 @@
     .footer__contacto{
         padding-bottom: 0;
     }
+    
+    //ed. ambiental imagenes
+    .section__container--ambiental{
+        .ambiental__galeria{
+            display: none;
+        }
+    }
+    //formulario
+    .formulario__content{
+        width: 100%;
+    }
+    //caballos
+    .caballos__info{
+        padding: 5%;
+    }
 }
