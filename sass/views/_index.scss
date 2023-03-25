@@ -75,7 +75,7 @@
         @include sizes(100%, 100%);
         position: absolute;
         top: 0;
-        padding: 40px;
+        padding: 30px;
         display: flex;
         justify-content: center;
         align-items: end;
@@ -84,6 +84,7 @@
             @include font-title(800, normal, 3.35em);
             @include text-shadows(var(--text--shadow), var(--dark-back-1));
             text-transform: uppercase;
+            line-height: 1;
         }
     }
     .card__link{

@@ -656,7 +656,7 @@ a {
   height: 100%;
   position: absolute;
   top: 0;
-  padding: 40px;
+  padding: 30px;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -668,6 +668,7 @@ a {
   font-size: 3.35em;
   text-shadow: var(--text--shadow) var(--dark-back-1);
   text-transform: uppercase;
+  line-height: 1;
 }
 
 .card__link {
